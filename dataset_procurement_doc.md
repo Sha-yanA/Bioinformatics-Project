@@ -555,7 +555,7 @@ All datasets are version-controlled and publicly available:
 
 -  **PRISM Release**: 20Q2 (April 2020)
 
--  **Download Date**: [Specify your actual download date]
+-  **Download Date**: December 5, 2025
 
 -  **Checksums**: Available at https://depmap.org/portal/download/
 
