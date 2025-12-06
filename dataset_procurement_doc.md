@@ -67,9 +67,9 @@ Each dataset serves a specific purpose in the analytical pipeline, as detailed b
 
 1. Accessed DepMap Download Portal
 
-2. Selected dataset release: **DepMap Public 25Q2**
+2. Selected dataset version: **DepMap Public 25Q2**
 
-3. Located file: `OmicsExpressionProteinCodingGenesTPMLogp1.csv`
+3. Download: `OmicsExpressionProteinCodingGenesTPMLogp1.csv`
 
   
 
@@ -125,17 +125,17 @@ Each dataset serves a specific purpose in the analytical pipeline, as detailed b
 
 1. Returned to DepMap Download Portal
 
-2. Located dataset selector dropdown (defaulted to "DepMap Public 25Q2")
+2. Located dataset selector dropdown (defaulted to "DepMap Public")
 
 3.  **Switched to**: "PRISM Repurposing Secondary Screen"
 
-4. Downloaded: `secondary-screen-dose-response-curve-parameters.csv`
+4. Download: `secondary-screen-dose-response-curve-parameters.csv`
 
   
 
 **File Specifications**:
 
--  **Size**: ~150 MB
+-  **Size**: ~200 MB
 
 -  **Experimental Design**: 8-point dose-response curves for 1,448 FDA-approved and investigational compounds
 
@@ -193,7 +193,7 @@ The Multiplexed Barcode Screening assay uses unique 24-nucleotide barcodes for e
 
 1. Returned to **DepMap Public 25Q2** dataset
 
-2. Downloaded: `Model.csv`
+2. Download: `Model.csv`
 
   
 
@@ -243,9 +243,9 @@ If our model predicts resistance but the cell line metadata reveals it's a melan
 
 **Navigation Steps**:
 
-1. Within **PRISM Repurposing Secondary Screen** dataset
+1. Switch back to **PRISM Repurposing Secondary Screen** dataset
 
-2. Downloaded: `secondary-screen-replicate-collapsed-treatment-info.csv`
+2. Download: `secondary-screen-replicate-collapsed-treatment-info.csv`
 
   
 
@@ -560,50 +560,6 @@ All datasets are version-controlled and publicly available:
 -  **Checksums**: Available at https://depmap.org/portal/download/
 
   
-
-Complete file paths and preprocessing code are documented in the GitHub repository: https://github.com/Sha-yanA/Bioinformatics-Project
-
-  
-
----
-
-  
-
-## Lessons Learned
-
-  
-
-1.  **Version Control Matters**: DepMap updates quarterly; specifying release versions ensures reproducibility
-
-2.  **Metadata is Non-Negotiable**: Without `Model.csv` and treatment info, results would be uninterpretable
-
-3.  **Primary ≠ Secondary**: The naming convention is misleading; secondary screens are higher quality
-
-4.  **Always Validate Joins**: The 617 vs. 579 discrepancy taught us to check for replicates early
-
-5.  **Documentation Pays Off**: This systematic approach enabled seamless collaboration across team members
-
-  
-
----
-
-  
-
-## Future Dataset Expansion
-
-  
-
-To address current limitations, future work could integrate:
-
-1.  **TCGA Patient Data**: Validate cell line predictions on clinical cohorts
-
-2.  **Mutations & CNV**: Add genomic features alongside transcriptomics
-
-3.  **Multi-Drug Panels**: Compare Paclitaxel-specific vs. pan-resistance signatures
-
-4.  **Proteomics**: DepMap now includes mass spectrometry data (not used here)
-
-5.  **Drug Combinations**: PRISM combinatorial screens (released 2024)
 
   
 
